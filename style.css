@@ -1,0 +1,104 @@
+body,
+html {
+
+    width: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    align-content: center;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background: #e0e0e0;
+
+    font-family: 'Roboto', sans-serif;
+
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+textarea {
+    resize: none;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    border: solid 0px #000;
+    background: transparent;
+    outline: none;
+
+}
+
+.converter {
+    height: 50vh;
+    padding: 3vh;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+}
+
+h1 {
+    margin-top: 8vh;
+    text-align: center;
+}
+
+#output {
+    overflow: hidden;
+}
+
+.output:after {
+    position: absolute;
+    content: 'COPY THE TEXT';
+    font-size: 3vw;
+    display: flex;
+    color: #494949;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.5);
+    opacity: 0;
+    transition: 0.5s all;
+    cursor: pointer;
+}
+
+.output:hover:after {
+    opacity: 1;
+}
+
+.converter div {
+    position: relative;
+    overflow: hidden;
+    width: 45%;
+    height: 100%;
+    border-radius: 50px;
+    background: #e0e0e0;
+    box-shadow: inset -20px 20px 60px #bebebe,
+        inset 20px -20px 60px #ffffff;
+    padding: 20px;
+}
+
+#preview {
+    padding: 20px;
+    position: relative;
+    margin-left: 50%;
+    transform: translate(-50%);
+    max-width: 100%;
+    min-height: 200px;
+    border-radius: 50px;
+    background: linear-gradient(225deg, #cacaca, #f0f0f0);
+    box-shadow: -20px 20px 60px #bebebe,
+        20px -20px 60px #ffffff;
+}
+
+h2{
+    text-align: center;
+}
+.title{
+    font-size: 40px;
+}

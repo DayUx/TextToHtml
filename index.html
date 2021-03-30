@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="pictures/dayux2.svg" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,700,800&amp;display=swap" rel="stylesheet">
+    <title>TextToHTML</title>
+</head>
+
+<body id=body>
+    <h1 class=title >Text to HTML</h1>
+    <h2 class=info>Allows you to convert text to HTML element's content by adding spaces, line break tags ...</h2>
+    <div class=converter>
+        <div class=input>
+        <textarea id=input onkeydown="if(event.keyCode===9){var v=this.value,s=this.selectionStart,e=this.selectionEnd;this.value=v.substring(0, s)+'\t'+v.substring(e);this.selectionStart=this.selectionEnd=s+1;return false;}" onkeyup="transform()">exemple : &#10;&#10;Hello World !&#10;it's working</textarea></div>
+        <div class=output onclick="copy()">
+        <textarea id=output readonly ></textarea></div>
+    </div>
+    <h1>Preview</h1>
+    <div id=preview></div>
+    <script src="DayuxParallax.js"></script>
+</body>

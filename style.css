@@ -49,6 +49,15 @@ h1 {
     overflow: hidden;
 }
 
+
+.output-input{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-content: center;
+}
+
+
 .output:after {
     position: absolute;
     content: 'COPY THE TEXT';
@@ -84,6 +93,7 @@ h1 {
 }
 
 #preview {
+    overflow-wrap:break-word;
     padding: 20px;
     position: relative;
     margin-left: 50%;

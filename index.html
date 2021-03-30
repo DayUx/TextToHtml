@@ -15,7 +15,12 @@
 <body id=body>
     <h1 class=title >Text to HTML</h1>
     <h2 class=info>Allows you to convert text to HTML element's content by adding spaces, line break tags ...</h2>
+    <div class=output-input>
+    <h1>Input</h1>
+         <h1>Output</h1>
+    </div>
     <div class=converter>
+        
         <div class=input>
         <textarea id=input onkeydown="if(event.keyCode===9){var v=this.value,s=this.selectionStart,e=this.selectionEnd;this.value=v.substring(0, s)+'\t'+v.substring(e);this.selectionStart=this.selectionEnd=s+1;return false;}" onkeyup="transform()">exemple : &#10;&#10;Hello World !&#10;it's working</textarea></div>
         <div class=output onclick="copy()">
